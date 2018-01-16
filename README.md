@@ -1,3 +1,3 @@
 # Parallel-max_element-parallel-freq
-The parallel algorithm for finding the maximum element
+The parallel algorithm for finding the maximum element<br>
 Frequency dictionary(chars)
