@@ -146,7 +146,7 @@ std::map<Key, Value> parrallel_freqC(Iterator first, Iterator last)
 
 	unsigned long const block_size = length / num_threads;
 
-	std::vector<std::future<std::map<Key, Value>>> futures(num_threads-1);
+	std::vector<std::future<std::map<Key, Value>>> futures(num_threads - 1);
 	std::vector<std::thread>threads(num_threads - 1);
 	tools_::join_threads joiner(threads);
 
@@ -159,7 +159,7 @@ std::map<Key, Value> parrallel_freqC(Iterator first, Iterator last)
 		std::packaged_task<std::map<Key, Value>(std::vector<std::string>::iterator, std::vector<std::string>::iterator)>task(freqC<>);
 
 		futures[i] = task.get_future();
-		threads[i] = std::thread(move(task),block_start,block_end);
+		threads[i] = std::thread(move(task), block_start, block_end);
 		block_start = block_end;
 	}
 
