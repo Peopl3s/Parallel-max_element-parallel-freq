@@ -132,7 +132,7 @@ const std::map<Key, Value> operator+(const std::map<Key, Value> &a, const std::m
 template<typename Iterator, typename Key = std::string, typename Value = unsigned int>
 std::map<Key, Value> parrallel_freqC(Iterator first, Iterator last) 
 {
-	unsigned long const length = distance(first,last);
+	unsigned long const length = distance(first, last);
 
 	if(!length)
 		return std::map<Key, Value> {};
