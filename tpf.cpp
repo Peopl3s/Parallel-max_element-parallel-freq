@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <sstream>
 #include <algorithm>
 #include <map>
 #include <thread>
@@ -8,8 +7,6 @@
 #include <fstream>
 #include <vector>
 #include <future>
-#include <ctime>
-#include <cstdio>
 
 namespace tools_
 {
@@ -65,12 +62,12 @@ void removeDashSetLenTwo(std::vector<std::string> &vec, bool lenTwo=false)
 	if(lenTwo) 
 	{
 		vec.erase(remove_if(vec.begin(), vec.end(), [](const std::string &str) {
-			return str.length() < 2 && str != "ÿ" && str != "i";
+			return str.length() < 2 && str != "Ã¿" && str != "i";
 		}), vec.end());
 	}
 
 	vec.erase(remove_if(vec.begin(), vec.end(), [](const std::string &str) {
-		return str == "—";
+		return str == "â€”";
 	}), vec.end());
 
 }
