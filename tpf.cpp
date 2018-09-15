@@ -210,5 +210,5 @@ int main()
 
 }
 
-//parrallel   106 ms. (1mb) | 1781 ms.  (file txt 52 mb)   |  6 538 ms. (file txt 208 mb)       |  22 488 (file txt 500 Mb)
-// stock     80 ms.   (1mb) | 5 700 ms. (file txt 52 mb)   |  23 302 ms. (file txt 208 mb)      |  64 472 (file txt 500 Mb)
+//parrallel   106 ms. (1mb) | 1781 ms.  (file txt 52 mb)   |  6 538 ms. (file txt 208 mb)       |  21 488 (file txt 500 Mb)
+// stock     80 ms.   (1mb) | 5 700 ms. (file txt 52 mb)   |  23 302 ms. (file txt 208 mb)      |  78 472 (file txt 500 Mb)
